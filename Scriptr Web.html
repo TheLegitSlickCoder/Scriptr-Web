@@ -1,0 +1,58 @@
+<!-- Scriptr Web -->
+<!-- By: SlickCoder (Hrishikesh Bagalkote) -->
+
+<!doctype html>
+<title>Scriptr Web</title>
+
+<html>
+<h1 id= "top">Scriptr - Web</h1>
+
+<br>
+<br>
+
+<div id= "main">
+  <textarea id= "codeInput", placeholder= "Code:", spellcheck= "false"></textarea>
+  <br>
+  <button id= "executeCode", onclick= "execute()">Execute Code</button>
+</div>
+</html>
+
+<style>
+body {
+  background-color: rgb(70, 70, 70);
+}
+#top {
+  text-align: center;
+  color: white;
+  font-family: arial;
+  font-size: 35px;
+}
+#main {
+  text-align: center;
+}
+#codeInput {
+  width: 600px;
+  height: 500px;
+  border: none;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  font-size: 15px;
+  font-family: monospace;
+}
+#executeCode {
+  border: none;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(70, 70, 70);
+}
+#executeCode:hover {
+  color: orange;
+}
+</style>
+
+<script>
+  function execute() {
+    var enteredCode = document.getElementById("codeInput").value;
+      document.write(enteredCode);
+  }
+</script>
